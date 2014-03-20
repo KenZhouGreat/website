@@ -160,6 +160,7 @@ table {
 
 #splash {
     position: relative;
+	height: 800px;
     width: 100%;
     background: #fefefe;
     background-image: -moz-linear-gradient(top, #fefefe 0, #E3FCFA 100%);
@@ -168,3 +169,120 @@ table {
     background-image: linear-gradient(to bottom, #fefefe 0, #E3FCFA 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#E3FCFA', GradientType=0);
 }
+
+#splashcenter {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+height: 883px;
+width: 960px;
+}
+
+#splash {
+    min-height: 1100px;
+}
+
+#splash:before,#splash:after {
+	content: " ";
+	display: table;
+}
+
+#splash:after {
+	clear: both;
+}
+
+#iphone {
+    width: 460px;
+    height: 883px;
+    z-index: 50;
+}
+
+#iphone:after {
+    width: 460px;
+    height: 883px;
+    background: url("../../Resources/Images/iphone.png") top left no-repeat transparent;
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 20;
+}
+
+#iphone:before {
+    z-index: 10;
+    content: "";
+    height: 776px;
+    width: 364px;
+    background-color: #111;
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 50px;
+    -webkit-border-radius: 62px;
+    -moz-border-radius: 62px;
+    border-radius: 62px;
+}
+
+#phone-inner {
+    width: 320px;
+    height: 568px;
+    top: 157px;
+    left: 72px;
+    position: absolute;
+    z-index: 60;
+    background: url(../img/iphone/timeline_background.png) top left repeat #f4f3f4;
+    background-size: 320px 50px;
+    cursor: url(../img/iphone/cursor.cur),ns-resize;
+    overflow: hidden;
+}
+
+@media (max-width:1100px),(max-height:1100px) {
+	#splash {
+        min-height: 724.06px !important;
+    }
+	
+	#splashcenter {
+		height: 724.06px !important;
+		width: 780px;
+	}
+	
+	
+}
+
+@media (max-width:899px),(max-height:919px) {
+	#splash {
+        min-height: 671.08px !important;
+    }
+	
+	#splashcenter {
+		width: 680px;
+		height: 671.08px !important;
+	}
+}
+
+@media (max-height:720px) {
+	#splash {
+			min-height: 485.65000000000003px !important;
+	}
+	
+	#splashcenter {
+		width: 640px;
+		height: 485.65000000000003px !important;
+	}
+}
+
+@media (max-width:660px) {
+	 #splash {
+        min-height: auto !important;
+        height: auto !important;
+        *zoom: 1;
+    }
+	
+	 #splashcenter {
+        width: 100%;
+        position: static;
+    }
+}
+
