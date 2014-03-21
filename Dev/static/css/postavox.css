@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
     overflow-x: hidden;
     padding: 0;
-    background: #fdfcfe;
+    background: #FAFFFF;
     font-family: "Open Sans";
     font-weight: 400;
     height: 100%;
@@ -171,14 +171,18 @@ table {
 }
 
 #splashcenter {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-height: 883px;
-width: 960px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	height: 883px;
+	width: 960px;
+}
+
+#splashcenter img {
+	margin-top: 40px;
 }
 
 #splash {
@@ -238,6 +242,225 @@ width: 960px;
     overflow: hidden;
 }
 
+.panel:nth-child(even) {
+   padding: 60px 750px 80px 0;
+}
+
+.panel:nth-child(even) p:first-child {
+    left: 280px;
+}
+
+.panel:nth-child(odd) {
+	padding: 60px 0 80px 750px;
+}
+
+.panel:nth-child(odd) p:first-child {
+    right: 280px;
+}
+
+
+.panel {
+width: 1000px;
+margin: 60px auto;
+padding: 60px 0 80px 0;
+height: 600px;
+position: relative;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.panel:before, .panel:after {
+content: " ";
+display: table;
+}
+
+.panel:after {
+clear: both;
+}
+
+.panel .inner {
+    height: 600px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.panel h2,.panel h3 {
+    font-size: 2.666em;
+    font-weight: 300;
+    margin: 30px 0 0 0;
+    color: #24A296;
+}
+
+.panel p {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 160%;
+    color: #565059;
+}
+
+.panel p:first-child {
+    position: absolute;
+    margin: 0;
+    top: 60px;
+    height: 600px;
+    overflow: hidden;
+    padding-top: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;	
+}
+
+.panel p:first-child img {
+    -webkit-transition: margin 0.3s ease;
+    -moz-transition: margin 0.3s ease;
+    -o-transition: margin 0.3s ease;
+    transition: margin 0.3s ease;
+	display:inline-block;
+	height:90%;
+	margin-top:35px;
+	
+}
+
+
+@media only screen and (max-width:699px) {
+    footer {
+        height: auto;
+        padding: 10px;
+        position: static;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    footer ul br {
+        display: none;
+    }
+
+    footer ul li {
+        line-height: 30px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    footer ul li:last-child a {
+        border: none;
+    }
+}
+
+#iphone {
+margin-right: 120px;
+-webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+transform-origin: 0 0;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+#perfectmemory {
+    padding: 80px 0 0 40px;
+    position: absolute;
+    top: 0;
+    left: 460px;
+}
+
+#perfectmemory h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#perfectmemory p {
+    font-weight: 300;
+    font-size: 2em;
+    color: #565059;
+    line-height: 160%;
+    margin-bottom: 10px;
+	margin-right:60px;	
+}
+
+#perfectmemory p strong {
+    font-weight: 600;
+}
+
+#perfectmemory a {
+    margin-right: 10px;
+}
+
+#perfectmemory a img {
+    margin: 40px 0 0 0;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 50;
+    height: auto;
+    margin: 0;
+    padding: 0 0 80px 0;
+    bottom: 0;
+    font-weight: 300;
+}
+
+footer a:hover {
+    color: #24A296;
+}
+
+footer ul {
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #8a818e;
+    line-height: 50px;
+    font-size: 1.5em;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li:last-child a {
+    border: 1px solid #8a818e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+footer ul li:last-child a:hover {
+    border-color: #24A296;
+}
+
+footer ul li.home,footer ul li.home a {
+    font-weight: 600;
+}
+
+footer ul li a {
+    color: #8a818e;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #24A296;
+}
+
+
 @media (max-width:1100px),(max-height:1100px) {
 	#splash {
         min-height: 724.06px !important;
@@ -248,6 +471,22 @@ width: 960px;
 		width: 780px;
 	}
 	
+	#iphone {
+        -webkit-transform: scale(.82);
+        -moz-transform: scale(.82);
+        -ms-transform: scale(.82);
+        -o-transform: scale(.82);
+        transform: scale(.82);
+    }
+	
+	#perfectmemory {
+		left: 377.2px;
+        padding-left: 30px;
+    }
+	
+	img#logo {
+        width: 218.11999999999998px;
+    }
 	
 }
 
@@ -260,6 +499,24 @@ width: 960px;
 		width: 680px;
 		height: 671.08px !important;
 	}
+	
+	 #iphone {
+        -webkit-transform: scale(.76);
+        -moz-transform: scale(.76);
+        -ms-transform: scale(.76);
+        -o-transform: scale(.76);
+        transform: scale(.76);
+    }
+	
+	#perfectmemory {
+        left: 349.6px;
+		padding: 60px 0 0 30px;
+        font-size: 90%;
+    }
+	
+	img#logo {
+        width: 250.00px;
+    }
 }
 
 @media (max-height:720px) {
@@ -267,10 +524,27 @@ width: 960px;
 			min-height: 485.65000000000003px !important;
 	}
 	
+	#iphone {
+        -webkit-transform: scale(.55);
+        -moz-transform: scale(.55);
+        -ms-transform: scale(.55);
+        -o-transform: scale(.55);
+        transform: scale(.55);
+    }
+	
 	#splashcenter {
 		width: 640px;
 		height: 485.65000000000003px !important;
 	}
+	
+	#perfectmemory {
+        padding: 0 0 0 30px;
+		left: 253.00000000000003px;
+    }
+	
+	img#logo {
+        width: 250.0px;
+    }
 }
 
 @media (max-width:660px) {
@@ -280,9 +554,30 @@ width: 960px;
         *zoom: 1;
     }
 	
-	 #splashcenter {
+	#splashcenter {
         width: 100%;
         position: static;
+		margin:auto;
+    }
+	
+	#iphone {
+        display: none;
+    }
+	
+	#perfectmemory {
+        font-size: 90% !important;
+        position: static;
+        text-align: center;
+        padding: 0 20px;
+        font-size: 100%;
+    }
+	
+	#perfectmemory img#logo {
+        max-width: 90%;
+    }
+
+    #perfectmemory img.appstore {
+        margin-top: 20px;
     }
 }
 
