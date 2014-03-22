@@ -242,41 +242,24 @@ table {
     overflow: hidden;
 }
 
-.panel:nth-child(even) {
-   padding: 60px 750px 80px 0;
-}
-
-.panel:nth-child(even) p:first-child {
-    left: 280px;
-}
-
-.panel:nth-child(odd) {
-	padding: 60px 0 80px 750px;
-}
-
-.panel:nth-child(odd) p:first-child {
-    right: 280px;
-}
-
-
 .panel {
-width: 1000px;
-margin: 60px auto;
-padding: 60px 0 80px 0;
-height: 600px;
-position: relative;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+	width: 1000px;
+	margin: 60px auto;
+	padding: 60px 0 80px 0;
+	height: 600px;
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .panel:before, .panel:after {
-content: " ";
-display: table;
+	content: " ";
+	display: table;
 }
 
 .panel:after {
-clear: both;
+	clear: both;
 }
 
 .panel .inner {
@@ -320,6 +303,22 @@ clear: both;
 	height:90%;
 	margin-top:35px;
 	
+}
+
+.panel:nth-child(even) {
+	padding: 60px 730px 80px 20px;
+}
+
+.panel:nth-child(even) p:first-child {
+	left: 280px;
+}
+
+.panel:nth-child(odd) {
+	padding: 60px 20px 80px 730px;
+}
+
+.panel:nth-child(odd) p:first-child {
+	right: 280px;
 }
 
 
@@ -461,6 +460,9 @@ footer ul li a:hover {
 }
 
 
+}
+
+
 @media (max-width:1100px),(max-height:1100px) {
 	#splash {
         min-height: 724.06px !important;
@@ -488,7 +490,27 @@ footer ul li a:hover {
         width: 218.11999999999998px;
     }
 	
+	.panel:nth-child(even) {
+		padding: 60px 750px 80px 0;
+	}
+
+	.panel:nth-child(even) p:first-child {
+		left: 280px;
+	}
+
+	.panel:nth-child(odd) {
+		padding: 60px 0 80px 750px;
+	}
+
+	.panel:nth-child(odd) p:first-child {
+		right: 280px;
+	}
 }
+
+
+	
+
+
 
 @media (max-width:899px),(max-height:919px) {
 	#splash {
@@ -517,6 +539,35 @@ footer ul li a:hover {
 	img#logo {
         width: 250.00px;
     }
+	
+	
+
+}
+
+@media (max-width:1000px) {
+	.panel:nth-child(even) {
+		padding: 60px 370px 80px 20px;
+	}
+
+	.panel:nth-child(even) p:first-child {
+		left: 360px;
+	}
+
+	.panel:nth-child(odd) {
+		padding: 60px 20px 80px 370px;
+	}
+
+	.panel:nth-child(odd) p:first-child {
+		right: 360px;
+	}
+	
+	.panel{
+		width:640px;
+	}
+}
+
+@media (max-width:820px) {
+	
 }
 
 @media (max-height:720px) {
@@ -580,4 +631,12 @@ footer ul li a:hover {
         margin-top: 20px;
     }
 }
+
+
+
+@media (max-width:479px) {
+	
+}
+
+
 
