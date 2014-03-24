@@ -19,6 +19,7 @@ body {
     font-family: "Open Sans";
     font-weight: 400;
     height: 100%;
+	min-width:281px
 }
 
 a:focus {
@@ -27,6 +28,8 @@ a:focus {
 
 a:active,a:hover {
     outline: 0;
+	color: #24A296;
+	text-decoration: underline;
 }
 
 h1 {
@@ -85,7 +88,7 @@ sub {
 }
 
 img {
-    border: 0;
+    border: 0;   
 }
 
 svg:not(:root) {
@@ -181,8 +184,9 @@ table {
 	width: 960px;
 }
 
-#splashcenter img {
-	margin-top: 40px;
+#splashcenter img {	
+	margin-top: 0px;
+	width: 100%;;
 }
 
 #splash {
@@ -236,10 +240,50 @@ table {
     left: 72px;
     position: absolute;
     z-index: 60;
-    background: url(../img/iphone/timeline_background.png) top left repeat #f4f3f4;
-    background-size: 320px 50px;
-    cursor: url(../img/iphone/cursor.cur),ns-resize;
+    background: top left repeat #f4f3f4;
+    background-size: 320px 50px;    
     overflow: hidden;
+}
+
+#phone-inner img {
+	position: absolute;
+	z-index: 8;
+}
+
+#phone-inner img.active{
+	z-index: 10;
+}
+
+#phone-inner img.last-active{
+	z-index: 9;
+}
+
+#learnmore {
+	position: absolute;
+	display: block;
+	padding: 40px 0 80px 0;
+	bottom: 0;
+	text-decoration: none;
+	background-image: url("../../Resources/Images/arrow.png");
+	background-size: auto auto;
+	background-position: center 80px;
+	background-repeat: no-repeat;
+	font-size: 1.5em;
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	color: #24A296;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	opacity: .6;
+	filter: alpha(opacity= 60 );
+}
+
+#learnmore:hover {
+opacity: 1;
+filter: alpha(opacity= 100 );
 }
 
 .panel {
@@ -292,6 +336,8 @@ table {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;	
+	width: 281px;
+
 }
 
 .panel p:first-child img {
@@ -299,9 +345,11 @@ table {
     -moz-transition: margin 0.3s ease;
     -o-transition: margin 0.3s ease;
     transition: margin 0.3s ease;
-	display:inline-block;
-	height:90%;
-	margin-top:35px;
+	display:inline-block;	
+	margin-top:35px;	
+	width:100%;
+	max-width:100%;
+	height:auto;
 	
 }
 
@@ -322,42 +370,18 @@ table {
 }
 
 
-@media only screen and (max-width:699px) {
-    footer {
-        height: auto;
-        padding: 10px;
-        position: static;
-    }
 
-    footer ul {
-        margin: 0;
-    }
-
-    footer ul br {
-        display: none;
-    }
-
-    footer ul li {
-        line-height: 30px;
-        display: block;
-        margin: 20px auto;
-    }
-
-    footer ul li:last-child a {
-        border: none;
-    }
-}
 
 #iphone {
-margin-right: 120px;
--webkit-transform-origin: 0 0;
--moz-transform-origin: 0 0;
--ms-transform-origin: 0 0;
--o-transform-origin: 0 0;
-transform-origin: 0 0;
-position: absolute;
-top: 0;
-left: 0;
+	margin-right: 120px;
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	-o-transform-origin: 0 0;
+	transform-origin: 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 #perfectmemory {
@@ -391,6 +415,7 @@ left: 0;
 
 #perfectmemory a img {
     margin: 40px 0 0 0;
+    width: auto;
 }
 
 footer {
@@ -405,6 +430,7 @@ footer {
     padding: 0 0 80px 0;
     bottom: 0;
     font-weight: 300;
+	position: static;
 }
 
 footer a:hover {
@@ -460,6 +486,32 @@ footer ul li a:hover {
 }
 
 
+
+
+@media only screen and (max-width:699px) {
+    footer {
+        height: auto;
+        padding: 10px;
+        position: static;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    footer ul br {
+        display: none;
+    }
+
+    footer ul li {
+        line-height: 30px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    footer ul li:last-child a {
+        border: none;
+    }
 }
 
 
@@ -491,7 +543,7 @@ footer ul li a:hover {
     }
 	
 	.panel:nth-child(even) {
-		padding: 60px 750px 80px 0;
+		padding: 60px 730px 80px 20px;
 	}
 
 	.panel:nth-child(even) p:first-child {
@@ -499,7 +551,7 @@ footer ul li a:hover {
 	}
 
 	.panel:nth-child(odd) {
-		padding: 60px 0 80px 750px;
+		padding: 60px 20px 80px 730px;
 	}
 
 	.panel:nth-child(odd) p:first-child {
@@ -539,6 +591,21 @@ footer ul li a:hover {
 	img#logo {
         width: 250.00px;
     }
+	
+	#learnmore {
+		padding: 20px 0;
+		background-image: none;
+	}
+	
+	#learnmore:after {
+		content: "";
+		background-image: url("../../Resources/Images/arrow.png");
+		background-size: 22px 12px;
+		width: 22px;
+		height: 12px;
+		margin-left: 10px;
+		display: inline-block;
+	}
 	
 	
 
@@ -684,11 +751,9 @@ footer ul li a:hover {
 	.panel p:first-child {
 		height: 385px;
 		top: 0;
+		width: 190px;
 	}
 	
-	.panel img {
-		height:80%;
-	}
 	
 }
 
@@ -709,11 +774,11 @@ footer ul li a:hover {
 		position: static !important;
 		height: auto !important;
 		margin: 0 auto !important;
+		width:80%;
+		min-width:281px;
 	}
 	
-	.panel p:first-child  img{
-		width:80%;
-	}
+	
 }
 
 
