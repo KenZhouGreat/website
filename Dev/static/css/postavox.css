@@ -16,10 +16,11 @@ body {
     overflow-x: hidden;
     padding: 0;
     background: #FAFFFF;
-    font-family: "Open Sans";
+	font-family: "Raleway";
     font-weight: 400;
     height: 100%;
-	min-width:281px
+	min-width:281px;
+	-webkit-font-smoothing: antialiased;
 }
 
 a:focus {
@@ -282,8 +283,8 @@ table {
 }
 
 #learnmore:hover {
-opacity: 1;
-filter: alpha(opacity= 100 );
+	opacity: 1;
+	filter: alpha(opacity= 100 );
 }
 
 .panel {
@@ -314,7 +315,7 @@ filter: alpha(opacity= 100 );
 
 .panel h2,.panel h3 {
     font-size: 2.666em;
-    font-weight: 300;
+    font-weight: 500;
     margin: 30px 0 0 0;
     color: #24A296;
 }
@@ -369,6 +370,16 @@ filter: alpha(opacity= 100 );
 	right: 280px;
 }
 
+.panel a{
+	font-size:19px;
+	text-decoration:none;
+	color:#24A296;
+}
+.panel a:hover{
+	font-size:19px;
+	text-decoration:underline;	
+}
+
 
 
 
@@ -406,7 +417,7 @@ filter: alpha(opacity= 100 );
 }
 
 #perfectmemory p strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 #perfectmemory a {
@@ -431,7 +442,13 @@ footer {
     bottom: 0;
     font-weight: 300;
 	position: static;
+	display:none;
 }
+
+#splash footer {
+	display:block;
+}
+
 
 footer a:hover {
     color: #24A296;
@@ -453,31 +470,15 @@ footer ul li {
     font-size: 1.5em;
 }
 
-footer ul li:last-child {
-    margin-right: 0;
-}
-
-footer ul li:last-child a {
-    border: 1px solid #8a818e;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    white-space: nowrap;
-}
-
-footer ul li:last-child a:hover {
-    border-color: #24A296;
-}
-
 footer ul li.home,footer ul li.home a {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 footer ul li a {
     color: #8a818e;
     padding: 8px 16px;
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 footer ul li a:hover {
@@ -485,33 +486,23 @@ footer ul li a:hover {
     color: #24A296;
 }
 
+#slogan {
+	text-align: center;
+	padding: 0;
+	height: 80px;
+}
+
+#slogan h2 {
+	font-size: 2.666em;
+	font-weight: 500;	
+	color: #24A296;	
+	vertical-align:middle;
+}
 
 
 
 @media only screen and (max-width:699px) {
-    footer {
-        height: auto;
-        padding: 10px;
-        position: static;
-    }
-
-    footer ul {
-        margin: 0;
-    }
-
-    footer ul br {
-        display: none;
-    }
-
-    footer ul li {
-        line-height: 30px;
-        display: block;
-        margin: 20px auto;
-    }
-
-    footer ul li:last-child a {
-        border: none;
-    }
+    
 }
 
 
@@ -536,10 +527,11 @@ footer ul li a:hover {
 	#perfectmemory {
 		left: 377.2px;
         padding-left: 30px;
+		padding-top: 105px;
     }
 	
 	img#logo {
-        width: 218.11999999999998px;
+        width: 100%;
     }
 	
 	.panel:nth-child(even) {
@@ -584,7 +576,7 @@ footer ul li a:hover {
 	
 	#perfectmemory {
         left: 349.6px;
-		padding: 60px 0 0 30px;
+		padding: 95px 0 0 30px;
         font-size: 90%;
     }
 	
@@ -642,9 +634,7 @@ footer ul li a:hover {
 	
 }
 
-@media (max-width:820px) {
-	
-}
+
 
 @media (max-height:720px) {
 	#splash {
@@ -674,7 +664,7 @@ footer ul li a:hover {
     }
 	
 	.panel {
-		padding: 40px;		
+		padding: 60px;		
 	}
 	
 	.panel:nth-child(2){
@@ -754,6 +744,38 @@ footer ul li a:hover {
 		width: 190px;
 	}
 	
+	#slogan{
+		font-size:90%;
+	}
+	
+	footer {
+		display:block;
+        height: auto;
+        padding: 10px;
+        position: static;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    footer ul br {
+        display: none;
+    }
+
+    footer ul li {
+        line-height: 30px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    footer ul li:last-child a {
+        border: none;
+    }
+	
+	#splash footer {
+		display:none;
+	}
 	
 }
 
@@ -778,7 +800,17 @@ footer ul li a:hover {
 		min-width:281px;
 	}
 	
+	#slogan{
+		font-size:72%;
+	}
 	
+	.panel a{
+		font-size:14px;
+	}
+	
+	.panel a:hover{
+		font-size:14px;
+	}
 }
 
 
