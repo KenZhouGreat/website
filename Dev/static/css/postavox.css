@@ -486,6 +486,57 @@ footer ul li a:hover {
     color: #24A296;
 }
 
+header {
+	width: 100%;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 50;
+    height: auto;
+    margin: 0;
+    padding: 0 0 10px 0;
+    bottom: 0;
+    font-weight: 300;
+	position: static;
+}
+
+header a:hover {
+    color: #24A296;
+}
+
+header ul {
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 30px;
+    color: #8a818e;
+    line-height: 50px;
+    font-size: 1.5em;
+}
+
+header ul li.home,header ul li.home a {
+    font-weight: 500;
+}
+
+header ul li a {
+    color: #8a818e;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: #24A296;
+}
+
 #slogan {
 	text-align: center;
 	padding: 0;
@@ -634,7 +685,11 @@ footer ul li a:hover {
 	
 }
 
-
+@media (max-height:600px) {
+	#splashcenter {
+		margin:55px auto auto auto;
+	}
+}
 
 @media (max-height:720px) {
 	#splash {
@@ -773,7 +828,7 @@ footer ul li a:hover {
         border: none;
     }
 	
-	#splash footer {
+	header {
 		display:none;
 	}
 	
