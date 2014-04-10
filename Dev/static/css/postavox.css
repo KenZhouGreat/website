@@ -421,7 +421,7 @@ table {
 }
 
 #perfectmemory a {
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
 #perfectmemory a img {
@@ -645,8 +645,7 @@ header ul li a:hover {
 		background-image: url("../../Resources/Images/arrow.png");
 		background-size: 22px 12px;
 		width: 22px;
-		height: 12px;
-		margin-left: 10px;
+		height: 12px;		
 		display: inline-block;
 	}
 	
@@ -735,13 +734,18 @@ header ul li a:hover {
 @media (max-height:600px) {
 	#splashcenter {
 		margin:55px auto auto auto;
+		
 	}
+	
+	 #splash {
+		min-height:575px !important;
+	 }
 }
 
 @media (max-width:660px) {
 	 #splash {
-        min-height: auto !important;
-        height: auto !important;
+        min-height: 575px !important;
+		height:auto !important;
         *zoom: 1;
     }
 	
@@ -752,8 +756,12 @@ header ul li a:hover {
     }
 	
 	#iphone {
-        display: none;
-    }
+        -webkit-transform: scale(.61);
+        -moz-transform: scale(.61);
+        -ms-transform: scale(.61);
+        -o-transform: scale(.61);
+        transform: scale(.61);
+}
 	
 	#perfectmemory {
         font-size: 90% !important;
@@ -847,11 +855,11 @@ header ul li a:hover {
 
 @media (max-width:479px) {
 	.panel {
-	padding: 20px 20px !important;
-	height: auto;
-	text-align: center;
-	font-size: 80%;
-	margin: 20px 0;
+		padding: 20px 20px !important;
+		height: auto;
+		text-align: center;
+		font-size: 80%;
+		margin: 20px 0;
 	}
 	
 	.panel p:first-child {

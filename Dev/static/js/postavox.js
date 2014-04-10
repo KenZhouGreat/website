@@ -10,12 +10,36 @@ function next_slide() {
 	setTimeout("next_slide()", 5000);
 }
 
+function adjustIPhonePosition(){
+	console.log($(window).width());
+	if($(window).width() <= 645){
+		var iPhone = $("#iphone");
+		var splash = $("#splash");
+		var perfectMemory = $("#perfectmemory");
+		var	margin = 65;
+		var properHeight = perfectMemory.height() + 539 + margin;
+		$("#splashcenter").css("cssText", "height:" +properHeight +"px !important;");	
+		$("#iphone").css("top", perfectMemory.height() + 20);
+		$("#iphone").css("left", ($(window).width() - 281)/2);
+	}
+	else{
+		$("#splashcenter").removeAttr( 'style' );
+		$("#iphone").removeAttr( 'style' );
+	}
+}
+
 
 $(document).ready(function () {
+	
 	$("#splash").height($(window).height());
+	
     $(window).resize(function () {
         $("#splash").height($(window).height())
+		adjustIPhonePosition();	
     });
+	adjustIPhonePosition();	
+	
+	
 	$("#learnmore").smoothScroll({
         speed: 800
     });
@@ -23,5 +47,7 @@ $(document).ready(function () {
 	$(function() {
 		setTimeout("next_slide()", 5000);
 	});
+	
+	
 	
 });
