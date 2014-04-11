@@ -11,16 +11,17 @@ function next_slide() {
 }
 
 function adjustIPhonePosition(){
-	console.log($(window).width());
 	if($(window).width() <= 645){
 		var iPhone = $("#iphone");
 		var splash = $("#splash");
 		var perfectMemory = $("#perfectmemory");
 		var	margin = 65;
 		var properHeight = perfectMemory.height() + 539 + margin;
-		$("#splashcenter").css("cssText", "height:" +properHeight +"px !important;");	
-		$("#iphone").css("top", perfectMemory.height() + 20);
+		$("#splashcenter").css("cssText", "height:" +properHeight +"px !important;");
+		var bottom = $('#downloadfromappstore').position().top+$('#downloadfromappstore').outerHeight(true);		
+		$("#iphone").css("top", bottom);
 		$("#iphone").css("left", ($(window).width() - 281)/2);
+		$("#iphone").css("display", "block");
 	}
 	else{
 		$("#splashcenter").removeAttr( 'style' );
@@ -31,13 +32,13 @@ function adjustIPhonePosition(){
 
 $(document).ready(function () {
 	
-	$("#splash").height($(window).height());
+	$("#splash").height($(window).height());	
 	
     $(window).resize(function () {
         $("#splash").height($(window).height())
 		adjustIPhonePosition();	
     });
-	adjustIPhonePosition();	
+	
 	
 	
 	$("#learnmore").smoothScroll({
@@ -50,4 +51,8 @@ $(document).ready(function () {
 	
 	
 	
+});
+
+$(window).load(function(){
+	adjustIPhonePosition();			
 });

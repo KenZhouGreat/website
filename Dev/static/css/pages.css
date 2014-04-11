@@ -242,7 +242,7 @@ footer ul li a {
     color: #8a818e;
     padding: 8px 16px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 footer ul li a:hover {
@@ -277,7 +277,7 @@ nav ul li a {
     color: #8a818e;
     padding: 8px 0px 8px 16px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 nav ul li a:hover {
@@ -366,7 +366,7 @@ nav ul li a:hover {
 
 .cellTitle h3 {
 font-size: 2.666em;
-font-weight: 500;
+font-weight: 400;
 color: #24A296;
 margin:0px auto;
 }
@@ -461,7 +461,7 @@ margin:0px auto;
 
 #slogan h2 {
 	font-size: 2.666em;
-	font-weight: 500;	
+	font-weight: 400;	
 	color: #24A296;	
 	vertical-align:middle;
 }
@@ -475,6 +475,7 @@ margin:0px auto;
 	font-size: 19px;
 	text-decoration: none;
 	color: #24A296;
+
 }
 
 .footer a:hover,p a:hover {
@@ -482,6 +483,14 @@ margin:0px auto;
 	text-decoration: underline;
 }
 
+.notfound{
+	margin:10px auto;
+	width:800px;
+}
+
+.notfound.cell{
+	padding:60px 10px;
+}
 
 
 @media only screen and (max-width: 840px) {
@@ -493,13 +502,22 @@ margin:0px auto;
 		padding: 0 20px;
 	}
 	
-	.aboutus, #logo {
+	.aboutus {
 		width: 100%;
 		margin: 0 auto;
 	}
 	
 	header {
 		width: 100%;
+	}
+	
+	.notfound{
+		margin:10px auto;
+		width:100%;
+	}
+
+	.notfound.cell{
+		padding:60px 10px;
 	}
 }
 

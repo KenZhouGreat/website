@@ -315,7 +315,7 @@ table {
 
 .panel h2,.panel h3 {
     font-size: 2.666em;
-    font-weight: 500;
+    font-weight: 400;
     margin: 30px 0 0 0;
     color: #24A296;
 }
@@ -417,7 +417,7 @@ table {
 }
 
 #perfectmemory p strong {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #perfectmemory a {
@@ -426,7 +426,8 @@ table {
 
 #perfectmemory a img {
     margin: 40px 0 0 0;
-    width: auto;
+    width: 203px;
+    height: 60px;
 }
 
 footer {
@@ -471,14 +472,14 @@ footer ul li {
 }
 
 footer ul li.home,footer ul li.home a {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 footer ul li a {
     color: #8a818e;
     padding: 8px 16px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 footer ul li a:hover {
@@ -522,14 +523,14 @@ header ul li {
 }
 
 header ul li.home,header ul li.home a {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 header ul li a {
     color: #8a818e;
     padding: 8px 16px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 header ul li a:hover {
@@ -545,7 +546,7 @@ header ul li a:hover {
 
 #slogan h2 {
 	font-size: 2.666em;
-	font-weight: 500;	
+	font-weight: 400;	
 	color: #24A296;	
 	vertical-align:middle;
 }
@@ -559,11 +560,11 @@ header ul li a:hover {
 
 @media (max-width:1100px),(max-height:1100px) {
 	#splash {
-        min-height: 724.06px !important;
+        min-height: 724px !important;
     }
 	
 	#splashcenter {
-		height: 724.06px !important;
+		height: 724px !important;
 		width: 780px;
 	}
 	
@@ -693,7 +694,7 @@ header ul li a:hover {
 
 @media (max-height:720px) {
 	#splash {
-			min-height: 485.65000000000003px !important;
+			min-height: 486 !important;
 	}
 	
 	#iphone {
@@ -706,13 +707,13 @@ header ul li a:hover {
 	
 	#splashcenter {
 		width: 640px;
-		height: 485.65000000000003px !important;
+		height: 486px !important;
 		margin:auto;
 	}
 	
 	#perfectmemory {
         padding: 0 0 0 30px;
-		left: 253.00000000000003px;
+		left: 253px;
     }
 	
 	img#logo {
@@ -756,12 +757,13 @@ header ul li a:hover {
     }
 	
 	#iphone {
+		display:none;
         -webkit-transform: scale(.61);
         -moz-transform: scale(.61);
         -ms-transform: scale(.61);
         -o-transform: scale(.61);
         transform: scale(.61);
-}
+	}
 	
 	#perfectmemory {
         font-size: 90% !important;
