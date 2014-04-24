@@ -467,15 +467,54 @@ nav ul li a:hover {
     padding: 60px 10px;
 }
 
-.legal {
-    margin: 90px auto;
-    width: 80px;
+.termsprivacy {
+    font-family: Arial;
+	margin: 10px auto;
+    width: 800px;
 }
 
-.legal.cell {
-    padding: 6px 1px;
-} 
+.termsprivacy.cell {
+    padding: 10px 20px;
+	font-size: 160%;
+}
 
+.termsprivacy .heading{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.termsprivacy .heading h1{
+	font-weight:300;
+}
+
+ul.level1 li{
+	font-size:22px;
+	font-weight:300;
+}
+
+ul.level1 li p{
+	font-size:16px;
+}
+
+ul.level2 li{
+	font-size:17px;
+	margin: 13px;
+}
+
+ul.level2 p{
+	font-size:16px;
+}
+
+ul.level3 li{
+	font-size:16px;
+	font-style:italic;
+}
+
+ul.level3 p{
+	font-size:16px;
+	font-style:normal;
+	margin-top:2px;
+}
 
 
 @media only screen and (max-width:840px) {
@@ -505,13 +544,13 @@ nav ul li a:hover {
         padding: 60px 10px;
     }
 	
-	.legal {
+	.termsprivacy {
         margin: 10px auto;
         width: 100%;
     }
 
-    .legal.cell {
-        padding: 60px 10px;
+    .termsprivacy.cell {
+        padding: 20px 10px;
     }
 }
 
